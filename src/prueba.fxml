@@ -2,11 +2,18 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pruebaConroller">
    <children>
       <Button fx:id="btnRojo" layoutX="157.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#cambiarRojo" text="Rojo" />
       <Button fx:id="btnverde" layoutX="259.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#cambiarVerde" text="Verde" />
       <Button fx:id="btnAzul" layoutX="359.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#cambiarAzul" text="Azul" />
+      <Text fx:id="label" layoutX="254.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="56.79998779296875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
    </children>
 </Pane>

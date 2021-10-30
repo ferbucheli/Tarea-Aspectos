@@ -1,4 +1,6 @@
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -16,9 +18,26 @@ public void start(Stage primaryStage) {
 	} catch(Exception e) {
 		e.printStackTrace();
 	}
+	
+	robar();
 }
 
 	public static void main(String[] args) {
 		launch(args);
 	}
+	
+	public static void robar() {
+		System.out.println("hola");
+		
+	}
+	
+	private static Parent loadFXML(String fxml) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml + ".fxml"));
+        return fxmlLoader.load();
+    }
+    
+    public static FXMLLoader loadFXMLLoader(String fxml) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml + ".fxml"));
+        return fxmlLoader;
+    }
 }

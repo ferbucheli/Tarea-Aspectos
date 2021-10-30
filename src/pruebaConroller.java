@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
 import javafx.scene.input.MouseEvent;
 
 public class pruebaConroller implements Initializable {
@@ -23,6 +24,9 @@ public class pruebaConroller implements Initializable {
 
     @FXML
     private Button btnAzul;
+    
+    @FXML
+    private Text label;
 
     @FXML
     void cambiarAzul(MouseEvent event) {
